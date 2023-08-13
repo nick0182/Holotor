@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net7.0</TargetFrameworks>
+		<RootNamespace>Holotor.Core</RootNamespace>
+		<Platforms>x86;x64;arm64;AnyCPU</Platforms>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+		<PackageReference Include="System.IO.Ports" Version="7.0.0" />
+		<PackageReference Include="System.Management" Version="7.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="holotorhardwaremonitor">
+	    <HintPath>..\..\holotorhardwaremonitor\holotorhardwaremonitor\bin\Debug\net7.0\holotorhardwaremonitor.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

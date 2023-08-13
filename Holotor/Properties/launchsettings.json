@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Holotor (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Holotor (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
