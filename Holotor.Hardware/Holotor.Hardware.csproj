@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>Holotor.Hardware</RootNamespace>
+		<AssemblyName>HolotorHardware</AssemblyName>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.IO.Ports" Version="7.0.0" />
+		<PackageReference Include="System.Management" Version="7.0.2" />
+		<EmbeddedResource Include="Hardware\WinRing0.sys" />
+		<EmbeddedResource Include="Hardware\WinRing0x64.sys" />
+	</ItemGroup>
+
+</Project>

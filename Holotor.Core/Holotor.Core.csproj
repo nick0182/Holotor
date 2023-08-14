@@ -17,9 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Reference Include="holotorhardwaremonitor">
-	    <HintPath>..\..\holotorhardwaremonitor\holotorhardwaremonitor\bin\Debug\net7.0\holotorhardwaremonitor.dll</HintPath>
-	  </Reference>
+	  <ProjectReference Include="..\Holotor.Hardware\Holotor.Hardware.csproj" />
 	</ItemGroup>
 
 </Project>

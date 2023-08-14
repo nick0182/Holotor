@@ -1,5 +1,5 @@
 ﻿using Holotor.Core.Contracts.Services;
-using OpenHardwareMonitor.Hardware;
+using Holotor.Hardware;
 using System.Diagnostics;
 
 namespace Holotor.Core.Services;
