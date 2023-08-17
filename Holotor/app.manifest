@@ -12,7 +12,7 @@
 			<dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2, PerMonitor</dpiAwareness>
 		</windowsSettings>
 	</application>
-	<trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+	<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
 		<security>
 			<requestedPrivileges>
 				<requestedExecutionLevel
