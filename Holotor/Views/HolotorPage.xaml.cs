@@ -24,22 +24,14 @@ public sealed partial class HolotorPage : Page
         var holotorPathUri = new Uri(Path.Combine(AppContext.BaseDirectory, "Assets/countdown_test.mp4"));
         HolotorMedia.Source = MediaSource.CreateFromUri(holotorPathUri);
 
-        ShowTemperature();
-
-        //var temperatureService = new TemperatureService();
-        ////var cts = new CancellationTokenSource();
-        //Task.Run(async () =>
-        //{
-        //    while (true)
-        //    {
-        //        Debug.WriteLine("{0}; Current CPU temperature: {1}", Environment.CurrentManagedThreadId, temperatureService.GetTemperature());
-        //        await Task.Delay(TimeSpan.FromSeconds(1));
-        //    }
-        //});
+        // TODO: learn about MSAL.NET for Oauth2 flow (see bookmark)
+        // TODO: learn about MVVM Toolkit (see bookmark)
+        
     }
 
-    private void ShowTemperature()
+    protected override void OnNavigatedTo(NavigationEventArgs e)
     {
+        base.OnNavigatedTo(e);
         var dispatcherTimer = new DispatcherTimer();
         var timesTicked = 4;
         var lastPosition = TimeSpan.Zero;
